@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .b {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+
+    }
+</style>
+
+<body>
+    <div class="b">
+        <h3>string method</h3>
+        <b>String length</b>
+        <p id="demo"></p>
+        <b>String toUpperCase</b>
+        <p id="demo1"></p>
+        <b>String toLowerCase</b>
+        <p id="demo2"></p>
+        <b>String concat</b>
+        <p id="demo3"></p>
+        <b>String slice</b>
+        <p id="demo4"></p>
+        <b>String substring</b>
+        <p id="demo5"></p>
+        <script>
+            let text = "sakthi";
+            let text1 = "sakthi";
+            let text2 = "i love coding";
+            let text3 = "hacker";
+
+            document.getElementById("demo").innerHTML = text.length;
+            document.getElementById("demo1").innerHTML = text1.toUpperCase("sakthi");
+            document.getElementById("demo2").innerHTML = text1.toLowerCase("sakthi");
+            document.getElementById("demo3").innerHTML = text.concat("hacker");
+            document.getElementById("demo4").innerHTML = text2.slice("7");
+            document.getElementById("demo5").innerHTML = text3.substring("3");
+
+        </script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>1.large number</h3>
+    <p id="demo9"></p>
+    
+    
+
+    <h3>3. array length(computer,engineering)</h3>
+    <p id="demo"></p>
+
+    <h3>4. push method(add banana)</h3>
+    <p id="demo2"></p>
+
+    <h3>5. pop method(remove r15)</h3>
+    <p id="demo3"></p>
+
+    <h3>6. unshift array()</h3>
+    <p id="demo4"></p>
+
+    <h3>7.shift array</h3>
+    <p id="demo5"></p>
+    
+    <h3>8.indexof array</h3>
+    <p id="demo7"></p>
+    
+    <h3>9.slice array</h3>
+    <p id="demo8"></p>
+
+    <h3>10.join method</h3>
+    <p id="demo6"></p>
+    <script>
+        let text = ["computer", "engineering"];
+        let fruit = ["apple", "orange", "graphs"];
+        fruit.push("banana");
+        let bike = ["ktm", "duke", "pulsar", "r15"];
+        bike.pop();
+        let text1 = ["laptop", "computer", "cpu"];
+        text1.unshift("mouse", "keyboard");
+        let shape = ["circle","box","rect","triangle"];
+        shape.shift();
+        let game1=["gta","truck","b race","car race"];
+        game1.join();
+        let value=["10","20","30","40","50","60"];
+        let name=["sakthi","bala","siva","sanju"];
+        let number=["10","20","30","40","50"];
+        
+    
+    
+        // length array
+        document.getElementById("demo").innerHTML = text.length;
+        // push method
+        document.getElementById("demo2").innerHTML = fruit;
+        // pop array
+        document.getElementById("demo3").innerHTML = bike;
+        // unshift array
+        document.getElementById("demo4").innerHTML = text1;
+        // shift array
+        document.getElementById("demo5").innerHTML = shape;
+        // join array
+        document.getElementById("demo6").innerHTML= game1.join("temple run");
+        //  indexof array
+        document.getElementById("demo7").innerHTML= value.indexOf("40");
+        // slice array
+        document.getElementById("demo8").innerHTML=name.slice(3);
+        
+        
+        //  large number
+        function myfunction(arr){
+            return Math.max.apply(null,arr)
+        }
+        document.getElementById("demo9").innerHTML=myfunction(number);
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

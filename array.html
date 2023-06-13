@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .b{
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="b">
+    <h3>Array method</h3>
+    <b>pop method</b>
+    <p id="demo"></p>
+    <b>push method</b>
+    <p id="demo1"></p>
+    <b>length</b>
+    <p id="demo2"></p>
+    <b>charAt method</b>
+    <p id="demo3"></p>
+
+    <script>
+        let text = "game";
+        const fruit = ["banana", "mango", "apple"];
+        const bike = ["r15", "ns", "ducati", "ninja"];
+        fruit.pop();
+        document.getElementById("demo").innerHTML = fruit;
+        bike.push("pulsar");
+        document.getElementById("demo1").innerHTML = bike;
+        document.getElementById("demo2").innerHTML = bike.length;
+        document.getElementById("demo3").innerHTML = text.charAt("2");
+
+    </script>
+    </div>
+</body>
+
+</html>

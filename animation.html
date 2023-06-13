@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <h1>Animation box</h1>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            position: relative;
+            background-color: red;
+            animation-name: box;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+
+        }
+       
+
+    @keyframes box{
+            0% {background-color: red;}
+            25% {background-color: black;}
+            50% {background-color: yellow;}
+            75% {background-color: green;}
+            100% {background-color: blueviolet;}
+            
+            
+        }
+        @keyframes box{
+            0% {background-color: red; left: 0px; top: 0px;}
+            25% {background-color: black; left: 200px; top: 0px;}
+            50% {background-color: yellow; rotate: 90% ; left: 200px; top: 200px;}
+            75% {background-color: green; left: 250px; right: 200px; top: 100px;}
+            100% {background-color: blueviolet; left: 0px; top: 0px; motion-rotation: reverse;}
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="box"></div><br>
+    <h1>second image</h1>
+    <div class="box"></div>
+    
+    
+    
+    
+    
+</body>
+</html>

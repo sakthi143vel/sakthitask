@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      
+
+</head>
+
+<style>
+.item1 { grid-area: first image; }
+.item2 { grid-area: second image; }
+.item3 { grid-area: third image; }
+.item4 { grid-area: four image; }
+.item5 { grid-area: fifth image; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right header'
+    'menu footer footer footer header';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="item1">first image</div>
+  <div class="item2">second image</div>
+  <div class="item3">third image</div>  
+  <div class="item4">four-image</div>
+  <div class="item5">fiveth image</div>
+</div>
+
+</body>
+</html>
+
+
